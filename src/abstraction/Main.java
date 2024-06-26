@@ -27,6 +27,6 @@ public class Main {
         AnimalListener horseListener = new Horse();
         horseListener.eat();
         horseListener.makeSound();
-        
+               
     }
 }
