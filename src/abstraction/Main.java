@@ -1,5 +1,7 @@
 package abstraction;
 
+import abstraction.interfaces.AnimalListener;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -15,5 +17,16 @@ public class Main {
         cat.makeSound();
         cat.see();
         cat.sleep();*/
+
+        // * solution 2 : implement interface
+
+        AnimalListener giraphListener = new Girraph();
+        giraphListener.eat();
+        giraphListener.makeSound();
+        
+        AnimalListener horseListener = new Horse();
+        horseListener.eat();
+        horseListener.makeSound();
+        
     }
 }

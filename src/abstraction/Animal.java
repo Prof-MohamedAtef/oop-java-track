@@ -1,6 +1,6 @@
 package abstraction;
 
-import abstraction.interfaces.Animal;
+import abstraction.interfaces.AnimalListener;
 
 abstract class Animal {
     // Abstract method (does not have a body)
@@ -58,3 +58,29 @@ class Cat extends Animal{
 /*
  * solution 2 : implement interface
  */
+class Girraph implements AnimalListener{
+
+    @Override
+    public void makeSound() {
+        System.out.println("The Giraph says: Sound of Giraph");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("The Giraph is Eating ...");
+    }
+}
+
+class Horse implements AnimalListener{
+
+    @Override
+    public void makeSound() {
+        System.out.println("The Horse says: Sound of Horse");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("The Horse is Eating ...");
+    }
+
+}
