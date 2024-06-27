@@ -58,7 +58,7 @@ class Cat extends Animal{
 /*
  * solution 2 : implement interface
  */
-class Girraph implements AnimalListener{
+class Girraph implements AnimalListener {
 
     @Override
     public void makeSound() {
@@ -71,7 +71,7 @@ class Girraph implements AnimalListener{
     }
 }
 
-class Horse implements AnimalListener{
+class Horse implements AnimalListener {
 
     @Override
     public void makeSound() {

@@ -1,6 +1,7 @@
 package abstraction;
 
 import abstraction.interfaces.AnimalListener;
+import abstraction.interfaces.Machines;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,5 +29,13 @@ public class Main {
         horseListener.eat();
         horseListener.makeSound();
                
+        Horse horse = new Horse();
+        horse.sleep(); // using default function
+
+        AnimalListener.printAnimal(); // using the static function directly from the interface
+
+        Machines machines = new Machines();
+        machines.setPeep();  //todo - calling commonly used default method for 2 interfces - 
+
     }
 }

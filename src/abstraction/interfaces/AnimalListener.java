@@ -24,7 +24,7 @@ public interface AnimalListener {
     }
 
     // Static method (Java 8+)
-    static void printAnimal(){
+    public static void printAnimal(){
         System.out.println("Animal: " + CATEGORY);
     }
 
